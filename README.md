@@ -28,14 +28,10 @@ const bayar = {
 
 ### What a request looks like on bayar.dev
 
-```mermaid
-flowchart TD
-  U([client]) --> E[edge route<br/>+ rate limit]
-  E --> G[PII guard]
-  G --> C{semantic<br/>cache}
-  C -- hit --> S([stream back])
-  C -- miss --> R[vector retrieval] --> M[model] --> S
-```
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/flow-dark.svg">
+  <img alt="Request flow: client → edge route + rate limit → PII guard → semantic cache → (hit) stream back, (miss) vector retrieval → model → stream back" src="./assets/flow-light.svg" width="100%">
+</picture>
 
 ### Stack
 
