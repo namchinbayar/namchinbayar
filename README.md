@@ -21,7 +21,7 @@ const bayar = {
   stage:     "early, bootstrapped, shipping",
   focus:     ["streaming AI", "edge routing", "rate limiting", "semantic caching",
               "PII redaction", "vector retrieval", "private VPC / BYOK"],
-  daily:     "CachyOS + KDE Plasma, fish, way too many terminals",
+  daily:     "CachyOS + Hyprland (Noctalia shell), kitty + fish, way too many terminals",
   based:     "Walnut Creek, CA",
 };
 ```
@@ -42,7 +42,9 @@ const bayar = {
   <img alt="Cloudflare" src="https://img.shields.io/badge/Cloudflare-F38020?style=for-the-badge&logo=cloudflare&logoColor=white">
   <img alt="AWS CDK" src="https://img.shields.io/badge/AWS_CDK-232F3E?style=for-the-badge&logo=amazonwebservices&logoColor=white">
   <img alt="Stripe" src="https://img.shields.io/badge/Stripe-635BFF?style=for-the-badge&logo=stripe&logoColor=white">
-  <img alt="Arch Linux" src="https://img.shields.io/badge/CachyOS-1793D1?style=for-the-badge&logo=archlinux&logoColor=white">
+  <img alt="Workers AI" src="https://img.shields.io/badge/Workers_AI-F38020?style=for-the-badge&logo=cloudflare&logoColor=white">
+  <img alt="CachyOS" src="https://img.shields.io/badge/CachyOS-1793D1?style=for-the-badge&logo=archlinux&logoColor=white">
+  <img alt="Hyprland" src="https://img.shields.io/badge/Hyprland-58E1FF?style=for-the-badge&logo=hyprland&logoColor=black">
 </p>
 
 ### Public work
