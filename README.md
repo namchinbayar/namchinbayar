@@ -29,7 +29,7 @@ const bayar = {
 ### What a request looks like on bayar.dev
 
 ```mermaid
-flowchart LR
+flowchart TD
   U([client]) --> E[edge route<br/>+ rate limit]
   E --> G[PII guard]
   G --> C{semantic<br/>cache}
