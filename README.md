@@ -1,7 +1,7 @@
 <a href="https://bayar.dev">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="./assets/header-dark.svg">
-    <img alt="Namchinbayar Naran — Founder & Systems Architect at bayar.dev" src="./assets/header-light.svg" width="100%">
+    <img alt="Namchinbayar Naran — Founder & Lead Engineer at bayar.dev" src="./assets/header-light.svg" width="100%">
   </picture>
 </a>
 
@@ -13,16 +13,18 @@
   <a href="mailto:hi@bayar.dev"><img alt="Email" src="https://img.shields.io/badge/hi@bayar.dev-email-3fb950?style=flat-square&logo=maildotru&logoColor=white&labelColor=0d1117"></a>
 </p>
 
-I'm **Bayar**, the solo founder of [**bayar.dev**](https://bayar.dev). I build AI infrastructure: streaming pipelines, edge routing, and the guardrails between your users and the model.
+I'm **Bayar**, the solo founder of [**bayar.dev**](https://bayar.dev). I build AI infrastructure in public: the layer between your users and the model. The terminal on the homepage is a real streaming endpoint, and every number on the site is measured.
 
 ```ts
 const bayar = {
-  building:  "bayar.dev — AI infrastructure & autonomous business workflows",
-  stage:     "early, bootstrapped, shipping",
-  focus:     ["streaming AI", "edge routing", "rate limiting", "semantic caching",
-              "PII redaction", "vector retrieval", "private VPC / BYOK"],
-  daily:     "CachyOS + Hyprland (Noctalia shell), kitty + fish, way too many terminals",
-  based:     "Walnut Creek, CA",
+  building: "bayar.dev — a live streaming AI terminal, built in public",
+  stage:    "early, bootstrapped, shipping",
+  shipped:  ["streaming chat on Workers AI", "per-IP rate limiting",
+             "request validation", "latency probes every 15 min"],
+  now:      "recall: event stream through Kafka into MongoDB Atlas",
+  next:     ["provider failover", "PII guard", "semantic cache", "private VPC / BYOK"],
+  daily:    "CachyOS + niri (Dux Shell), Rio + zsh, way too many terminals",
+  based:    "Walnut Creek, CA",
 };
 ```
 
@@ -30,8 +32,31 @@ const bayar = {
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="./assets/flow-dark.svg">
-  <img alt="Request flow: client → edge route + rate limit → PII guard → semantic cache → (hit) stream back, (miss) vector retrieval → model → stream back" src="./assets/flow-light.svg" width="100%">
+  <img alt="Live request flow: client → per-IP rate limit → validation → Llama 3.3 70B on Workers AI → stream back. Planned, not shipped: provider failover, PII guard, semantic cache, private VPC and BYOK" src="./assets/flow-light.svg" width="100%">
 </picture>
+
+### Measured, not claimed
+
+<!-- BENCH:START -->
+<p>
+  <a href="https://bayar.dev/benchmarks">
+  <img alt="TTFT p50: 275 ms" src="https://img.shields.io/badge/TTFT%20p50-275%20ms-7ee7ff?style=flat-square&labelColor=0d1117">
+  <img alt="output p50: 57 tok/s" src="https://img.shields.io/badge/output%20p50-57%20tok%2Fs-a78bfa?style=flat-square&labelColor=0d1117">
+  <img alt="success: 100%" src="https://img.shields.io/badge/success-100%25-3fb950?style=flat-square&labelColor=0d1117">
+  <img alt="samples: 672" src="https://img.shields.io/badge/samples-672-8b949e?style=flat-square&labelColor=0d1117">
+  </a>
+</p>
+
+<sub>Llama 3.3 70B (fp8, fast), short chat, last 7 days, probed every 15 minutes. Method and raw data at <a href="https://bayar.dev/benchmarks">bayar.dev/benchmarks</a>.</sub>
+<!-- BENCH:END -->
+
+### Latest from the log
+
+<!-- LOG:START -->
+- [Why I put a live AI terminal on my homepage](https://bayar.dev/log/why-a-live-terminal-on-my-homepage) · <sub>Oct 11, 2026</sub>
+- [Planning the site-public security header rollout](https://bayar.dev/log/making-the-site-public-and-adding-csp) · <sub>Oct 11, 2026</sub>
+- [All entries →](https://bayar.dev/log)
+<!-- LOG:END -->
 
 ### Stack
 
@@ -44,7 +69,7 @@ const bayar = {
   <img alt="Stripe" src="https://img.shields.io/badge/Stripe-635BFF?style=for-the-badge&logo=stripe&logoColor=white">
   <img alt="Workers AI" src="https://img.shields.io/badge/Workers_AI-F38020?style=for-the-badge&logo=cloudflare&logoColor=white">
   <img alt="CachyOS" src="https://img.shields.io/badge/CachyOS-1793D1?style=for-the-badge&logo=archlinux&logoColor=white">
-  <img alt="Hyprland" src="https://img.shields.io/badge/Hyprland-58E1FF?style=for-the-badge&logo=hyprland&logoColor=black">
+  <img alt="niri" src="https://img.shields.io/badge/niri-6E56CF?style=for-the-badge&logo=wayland&logoColor=white">
 </p>
 
 ### Public work
@@ -53,12 +78,5 @@ const bayar = {
 | --- | --- |
 | [**starfall-arcade**](https://github.com/namchinbayar/starfall-arcade) | A tiny cosmic browser game, deployed with AWS CDK |
 | [**@bayardotdev**](https://github.com/bayardotdev) | The bayar.dev organization |
-
-### Contributions
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/namchinbayar/namchinbayar/output/snake-dark.svg">
-  <img alt="Contribution graph being eaten by a snake" src="https://raw.githubusercontent.com/namchinbayar/namchinbayar/output/snake.svg" width="100%">
-</picture>
 
 <sub>ORCID <a href="https://orcid.org/0009-0001-5896-7447">0009-0001-5896-7447</a> · commits signed with SSH via 1Password</sub>
