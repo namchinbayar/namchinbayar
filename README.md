@@ -40,7 +40,7 @@ const bayar = {
 <!-- BENCH:START -->
 <p>
   <a href="https://bayar.dev/benchmarks">
-  <img alt="TTFT p50: 286 ms" src="https://img.shields.io/badge/TTFT%20p50-286%20ms-7ee7ff?style=flat-square&labelColor=0d1117">
+  <img alt="TTFT p50: 290 ms" src="https://img.shields.io/badge/TTFT%20p50-290%20ms-7ee7ff?style=flat-square&labelColor=0d1117">
   <img alt="output p50: 56 tok/s" src="https://img.shields.io/badge/output%20p50-56%20tok%2Fs-a78bfa?style=flat-square&labelColor=0d1117">
   <img alt="success: 100%" src="https://img.shields.io/badge/success-100%25-3fb950?style=flat-square&labelColor=0d1117">
   <img alt="samples: 672" src="https://img.shields.io/badge/samples-672-8b949e?style=flat-square&labelColor=0d1117">
