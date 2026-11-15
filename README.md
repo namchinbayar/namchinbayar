@@ -40,9 +40,9 @@ const bayar = {
 <!-- BENCH:START -->
 <p>
   <a href="https://bayar.dev/benchmarks">
-  <img alt="TTFT p50: 301 ms" src="https://img.shields.io/badge/TTFT%20p50-301%20ms-7ee7ff?style=flat-square&labelColor=0d1117">
-  <img alt="output p50: 54 tok/s" src="https://img.shields.io/badge/output%20p50-54%20tok%2Fs-a78bfa?style=flat-square&labelColor=0d1117">
-  <img alt="success: 99.9%" src="https://img.shields.io/badge/success-99.9%25-3fb950?style=flat-square&labelColor=0d1117">
+  <img alt="TTFT p50: 310 ms" src="https://img.shields.io/badge/TTFT%20p50-310%20ms-7ee7ff?style=flat-square&labelColor=0d1117">
+  <img alt="output p50: 53 tok/s" src="https://img.shields.io/badge/output%20p50-53%20tok%2Fs-a78bfa?style=flat-square&labelColor=0d1117">
+  <img alt="success: 99.7%" src="https://img.shields.io/badge/success-99.7%25-3fb950?style=flat-square&labelColor=0d1117">
   <img alt="samples: 671" src="https://img.shields.io/badge/samples-671-8b949e?style=flat-square&labelColor=0d1117">
   </a>
 </p>
@@ -53,9 +53,9 @@ const bayar = {
 ### Latest from the log
 
 <!-- LOG:START -->
+- [The homepage is one prompt now, with a tide under it](https://bayar.dev/log/the-homepage-is-one-prompt-with-a-tide-under-it) · <sub>Nov 14, 2026</sub>
 - [What enforcing the CSP cost, and what it could not see](https://bayar.dev/log/what-enforcing-the-csp-cost-and-what-it-could-not-see) · <sub>Nov 14, 2026</sub>
 - [The homepage now leads with numbers I measure](https://bayar.dev/log/the-homepage-now-leads-with-numbers-i-measure) · <sub>Nov 14, 2026</sub>
-- [Why I put a live AI terminal on my homepage](https://bayar.dev/log/why-a-live-terminal-on-my-homepage) · <sub>Oct 11, 2026</sub>
 - [All entries →](https://bayar.dev/log)
 <!-- LOG:END -->
 
