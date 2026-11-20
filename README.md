@@ -40,14 +40,14 @@ const bayar = {
 <!-- BENCH:START -->
 <p>
   <a href="https://bayar.dev/benchmarks">
-  <img alt="TTFT p50: 339 ms" src="https://img.shields.io/badge/TTFT%20p50-339%20ms-7ee7ff?style=flat-square&labelColor=0d1117">
-  <img alt="output p50: 53 tok/s" src="https://img.shields.io/badge/output%20p50-53%20tok%2Fs-a78bfa?style=flat-square&labelColor=0d1117">
-  <img alt="success: 99.7%" src="https://img.shields.io/badge/success-99.7%25-3fb950?style=flat-square&labelColor=0d1117">
-  <img alt="samples: 614" src="https://img.shields.io/badge/samples-614-8b949e?style=flat-square&labelColor=0d1117">
+  <img alt="TTFT p50: 569 ms" src="https://img.shields.io/badge/TTFT%20p50-569%20ms-7ee7ff?style=flat-square&labelColor=0d1117">
+  <img alt="output p50: 172 tok/s" src="https://img.shields.io/badge/output%20p50-172%20tok%2Fs-a78bfa?style=flat-square&labelColor=0d1117">
+  <img alt="success: 100%" src="https://img.shields.io/badge/success-100%25-3fb950?style=flat-square&labelColor=0d1117">
+  <img alt="samples: 4" src="https://img.shields.io/badge/samples-4-8b949e?style=flat-square&labelColor=0d1117">
   </a>
 </p>
 
-<sub>Llama 3.3 70B (fp8, fast), short chat, last 7 days, probed every 15 minutes. Method and raw data at <a href="https://bayar.dev/benchmarks">bayar.dev/benchmarks</a>.</sub>
+<sub>Claude Haiku 5.5 (low effort), short chat, last 7 days, probed every 15 minutes. Method and raw data at <a href="https://bayar.dev/benchmarks">bayar.dev/benchmarks</a>.</sub>
 <!-- BENCH:END -->
 
 ### Latest from the log
