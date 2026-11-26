@@ -49,7 +49,7 @@ def bench_section():
     ])
     return (f'<p>\n  <a href="https://bayar.dev/benchmarks">\n  {badges}\n  </a>\n</p>\n\n'
             f'<sub>{label}, short chat, last {window}, '
-            f'probed every 15 minutes. Method and raw data at '
+            f'probed every hour. Method and raw data at '
             f'<a href="https://bayar.dev/benchmarks">bayar.dev/benchmarks</a>.</sub>')
 
 
