@@ -19,11 +19,13 @@ I'm **Bayar**, the solo founder of [**bayar.dev**](https://bayar.dev). I build A
 const bayar = {
   building: "bayar.dev — a live streaming AI terminal, built in public",
   stage:    "early, bootstrapped, shipping",
-  shipped:  ["streaming chat on Workers AI", "per-IP rate limiting",
-             "request validation", "latency probes every 15 min"],
-  now:      "recall: event stream through Kafka into MongoDB Atlas",
+  shipped:  ["streaming chat on Claude Haiku 5.5", "per-IP rate limiting",
+             "request validation", "hourly benchmarks, raw data public",
+             "a one-prompt homepage with a tide under it"],
+  now:      "recall: knowledge base, Kafka event stream into MongoDB Atlas, metrics, agent + MCP",
   next:     ["provider failover", "PII guard", "semantic cache", "private VPC / BYOK"],
-  daily:    "CachyOS + niri (Dux Shell), Rio + zsh, way too many terminals",
+  later:    "founders access: tools for people who support the work",
+  daily:    "CachyOS + niri (Dux Shell), WezTerm + zsh, way too many terminals",
   based:    "Walnut Creek, CA",
 };
 ```
@@ -32,7 +34,7 @@ const bayar = {
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="./assets/flow-dark.svg">
-  <img alt="Live request flow: client → per-IP rate limit → validation → Llama 3.3 70B on Workers AI → stream back. Planned, not shipped: provider failover, PII guard, semantic cache, private VPC and BYOK" src="./assets/flow-light.svg" width="100%">
+  <img alt="Live request flow: client → per-IP rate limit → validation → Claude Haiku 5.5 through the Anthropic API → stream back. Planned, not shipped: provider failover, PII guard, semantic cache, private VPC and BYOK" src="./assets/flow-light.svg" width="100%">
 </picture>
 
 ### Measured, not claimed
@@ -40,14 +42,14 @@ const bayar = {
 <!-- BENCH:START -->
 <p>
   <a href="https://bayar.dev/benchmarks">
-  <img alt="TTFT p50: 511 ms" src="https://img.shields.io/badge/TTFT%20p50-511%20ms-7ee7ff?style=flat-square&labelColor=0d1117">
-  <img alt="output p50: 190 tok/s" src="https://img.shields.io/badge/output%20p50-190%20tok%2Fs-a78bfa?style=flat-square&labelColor=0d1117">
+  <img alt="TTFT p50: 510 ms" src="https://img.shields.io/badge/TTFT%20p50-510%20ms-7ee7ff?style=flat-square&labelColor=0d1117">
+  <img alt="output p50: 191 tok/s" src="https://img.shields.io/badge/output%20p50-191%20tok%2Fs-a78bfa?style=flat-square&labelColor=0d1117">
   <img alt="success: 100%" src="https://img.shields.io/badge/success-100%25-3fb950?style=flat-square&labelColor=0d1117">
-  <img alt="samples: 126" src="https://img.shields.io/badge/samples-126-8b949e?style=flat-square&labelColor=0d1117">
+  <img alt="samples: 141" src="https://img.shields.io/badge/samples-141-8b949e?style=flat-square&labelColor=0d1117">
   </a>
 </p>
 
-<sub>Claude Haiku 5.5 (low effort), short chat, last 7 days, probed every 15 minutes. Method and raw data at <a href="https://bayar.dev/benchmarks">bayar.dev/benchmarks</a>.</sub>
+<sub>Claude Haiku 5.5 (low effort), short chat, last 7 days, probed every hour. Method and raw data at <a href="https://bayar.dev/benchmarks">bayar.dev/benchmarks</a>.</sub>
 <!-- BENCH:END -->
 
 ### Latest from the log
@@ -68,7 +70,11 @@ const bayar = {
   <img alt="Cloudflare" src="https://img.shields.io/badge/Cloudflare-F38020?style=for-the-badge&logo=cloudflare&logoColor=white">
   <img alt="AWS CDK" src="https://img.shields.io/badge/AWS_CDK-232F3E?style=for-the-badge&logo=amazonwebservices&logoColor=white">
   <img alt="Stripe" src="https://img.shields.io/badge/Stripe-635BFF?style=for-the-badge&logo=stripe&logoColor=white">
-  <img alt="Workers AI" src="https://img.shields.io/badge/Workers_AI-F38020?style=for-the-badge&logo=cloudflare&logoColor=white">
+  <img alt="Claude" src="https://img.shields.io/badge/Claude-D97757?style=for-the-badge&logo=claude&logoColor=white">
+  <img alt="Python" src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white">
+  <img alt="MongoDB Atlas" src="https://img.shields.io/badge/MongoDB_Atlas-47A248?style=for-the-badge&logo=mongodb&logoColor=white">
+  <img alt="Apache Kafka" src="https://img.shields.io/badge/Apache_Kafka-231F20?style=for-the-badge&logo=apachekafka&logoColor=white">
+  <img alt="Tailscale" src="https://img.shields.io/badge/Tailscale-242424?style=for-the-badge&logo=tailscale&logoColor=white">
   <img alt="CachyOS" src="https://img.shields.io/badge/CachyOS-1793D1?style=for-the-badge&logo=archlinux&logoColor=white">
   <img alt="niri" src="https://img.shields.io/badge/niri-6E56CF?style=for-the-badge&logo=wayland&logoColor=white">
 </p>
@@ -77,7 +83,10 @@ const bayar = {
 
 | Project | What it is |
 | --- | --- |
-| [**starfall-arcade**](https://github.com/namchinbayar/starfall-arcade) | A tiny cosmic browser game, deployed with AWS CDK |
+| [**recall**](https://bayar.dev/projects#recall) | A personal knowledge base searched by meaning: Voyage embeddings, Atlas vector search, a Kafka event stream, and an MCP server. Private repo |
+| [**command-center**](https://bayar.dev/projects#command-center) | A private start page for running bayar.dev, read from Airtable with zero runtime dependencies. Private repo |
+| [**tailscale-policy**](https://bayar.dev/projects#tailscale-policy) | My tailnet rules as GitOps: tested on every PR, applied on merge, signed in with GitHub OIDC. Private repo |
+| [**starfall-arcade**](https://github.com/namchinbayar/starfall-arcade) | A tiny cosmic browser game: private S3 behind CloudFront, deployed with AWS CDK |
 | [**@bayardotdev**](https://github.com/bayardotdev) | The bayar.dev organization |
 
 <sub>ORCID <a href="https://orcid.org/0009-0001-5896-7447">0009-0001-5896-7447</a> · commits signed with SSH via 1Password</sub>
